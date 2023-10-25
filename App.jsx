@@ -26,7 +26,7 @@ const App = () => {
       <Text style={{fontSize:32, color: 'black', fontWeight:'bold'}}>Kantin Multistudi</Text>
       </View>
 
-      {/*Image */}
+      {/*Image 1*/}
       <View style={{ flexDirection:'row'}}>
       {/* 1 */}
       <View style={{ marginTop: 32, borderWidth: 1,
@@ -43,7 +43,7 @@ const App = () => {
           <Text style={{color: 'red'}}>Rp.10.000</Text>
 
       </View>
-      
+
       {/* 2 */}
       <View style={{ marginTop: 32, borderWidth: 1,
           padding: 12, flex:1}}>
