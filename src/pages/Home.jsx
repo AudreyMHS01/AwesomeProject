@@ -18,7 +18,8 @@ const Home = () => {
         justifyContent: 'space-between'
       }}>
         <Image source = {require ('../assets/images/ayam_mhs.png')} style={{width: 150, height: 35 }} />
-        <View style={{backgroundColor: 'blue', width: 40, height: 40, borderRadius: 5}}></View>
+        <Image source = {require ('../assets/images/menu.png')} style={{width: 25, height: 25 }} />
+        
       </View>
       {/*================================ Kantin======================================================= */}
       <View style={{margin: 16}}>
@@ -68,7 +69,7 @@ const Home = () => {
         <View style={{ marginTop: 8, flex:1, marginHorizontal:16}}>
             
         <View style={{flexDirection: 'row'}}>
-      <Image source = {require ('../assets/images/Daijin.jpg')} style={{width: 190, height: 180, borderRadius:12, }} /> 
+      <Image source = {require ('../assets/images/jussss.jpg')} style={{width: 190, height: 180, borderRadius:12, }} /> 
         </View>
           <Text style={{fontWeight:'bold', fontSize: 16, color:'black'}}>Jus</Text>
           <Text style={{color: 'red', marginTop:10,}}>Rp.12.000</Text>
