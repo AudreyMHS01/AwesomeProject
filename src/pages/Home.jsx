@@ -1,7 +1,7 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image,TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     //Parent
     <View>
@@ -27,18 +27,20 @@ const Home = () => {
       <Text style={{fontSize:32, color: 'black', fontWeight:'bold'}}>Kantin Multistudi</Text>
       </View>
       <Text style={{marginHorizontal: 16, marginTop:33, color:'black', fontWeight: 'bold', fontSize:16}}>Menu Makanan</Text>
-
+      
       {/*=================================Image 1=======================================================*/}
       <View style={{ flexDirection:'row'}}>
       {/*====================================== 1 =======================================================*/}
-      <View style={{ marginTop: 8, flex:1, marginHorizontal:16}}>
+      
+      <TouchableOpacity  onPress={() => navigation.navigate('Detail')} style={{ marginTop: 8, flex:1, marginHorizontal:16}}>
             
         <View style={{flexDirection: 'row'}}>
       <Image source = {require ('../assets/images/burger.jpg')} style={{width: 190, height: 180, borderRadius:12, }} /> 
        </View>
           <Text style={{fontWeight:'bold', fontSize: 16, color:'black'}}>Kraby Patty</Text>
           <Text style={{color: 'red', marginTop:10,}}>Rp.10.000</Text>
-      </View>
+      </TouchableOpacity>
+      
 
       {/* ==============================2=============================================================== */}
         <View style={{ marginTop: 8, flex:1, marginHorizontal:16}}>
